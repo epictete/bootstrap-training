@@ -10,15 +10,73 @@
 </head>
 
 <body>
+
+
+    <h2>I - Blocs positioning</h2>
     <div class="container">
-        <div class="row border rounded bg-light text-center align-middle mt-3">
-            <div class="col-12">12 colonnes</div>
-            <div class="col-1"></div>
-            <div class="col-2 border rounded">Coucou</div>
-            <div class="col-2"></div>
-            <div class="col-3 border rounded">ça</div>
-            <div class="col-2"></div>
-            <div class="col-2 border rounded">va ?</div>
+        <div class="row border rounded bg-light text-center align-middle mt-3 mb-3">
+            <div class="col-12 p-2">12 colonnes</div>
+            <div class="col-2 border rounded offset-1 p-2">Coucou</div>
+            <div class="col-3 border rounded offset-2 p-2">ça</div>
+            <div class="col-2 border rounded offset-2 p-2">va ?</div>
+        </div>
+    </div>
+
+
+    <h2>II - Imbricated elements</h2>
+    <div class="container">
+        <div class="row mt-3 mb-3 text-center align-middle">
+            <div class="col-4 border rounded bg-light align-self-start">
+                Nouvel
+            </div>
+            <div class="col-8 border rounded bg-light">
+                Exercice
+                <div class="row">
+                    <div class="col-3 border rounded bg-light">ces</div>
+                    <div class="col-6 border rounded bg-light">blocs sont tous</div>
+                    <div class="col-3 border rounded bg-light">dans</div>
+                    <div class="col-4 border rounded bg-light">la même</div>
+                    <div class="col-4 border rounded bg-light">div où est</div>
+                    <div class="col-4 border rounded bg-light">inscrit : "Exercice".</div>
+                    <div class="col-5 border rounded bg-light">Comment</div>
+                    <div class="col-2 border rounded bg-light">est</div>
+                    <div class="col-5 border rounded bg-light">ce possible ?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>III - Change elements order</h2>
+    <div class="container">
+        <div class="row border rounded bg-light text-center align-middle mt-3 mb-3">
+            <div class="col-12 p-2">12 colonnes</div>
+            <div class="col-2 offset-1 border rounded offset-1 p-2">Bloc 1 de 3</div>
+            <div class="col-2 offset-2 border rounded offset-1 p-2 order-1">Bloc 2 de 3</div>
+            <div class="col-2 offset-2 border rounded offset-1 p-2">Bloc 3 de 3</div>
+        </div>
+    </div>
+
+
+    <h2>IV - Practice makes good</h2>
+    <div class="container">
+        <div class="row bg-light text-center align-middle mt-3 mb-3">
+            <div class="col-6 border rounded">
+                <div class="col-12 p-2">6 colonnes</div>
+                <div class="row">
+                    <div class="col-4 border rounded p-2">4 colonnes</div>
+                    <div class="col-4 border rounded p-2 offset-4">4 colonnes</div>
+                </div>
+
+            </div>
+            <div class="col-6 border rounded">
+                <div class="col-12 p-2">6 colonnes</div>
+                <div class="row">
+                    <div class="col-4 border rounded p-2">4 colonnes</div>
+                    <div class="col-8 border rounded p-2">8 colonnes</div>
+                </div>
+
+            </div>
         </div>
     </div>
 
